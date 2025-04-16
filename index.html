@@ -1,22 +1,258 @@
-<!DOCTYPE html>
 
-<html> <!-- Used w3 schools for synatx -->
-    <head>
-        <title>ahermey.me</title>
-    </head>
-    <body >  
-      <h1 >👋 Hello World!</h1>
-      <img src = "data:image/jpeg;base64,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" alt = "image of Annabelle Hermey">
-        <h1 >My name is Annabelle Hermey</h1>
-        <p> I am a computer science modified with engineering '26 at Dartmouth College. Outside of the classroom I'm on the women's rowing team and I like to embroider.</p>
-        <a href="https://www.linkedin.com/in/annabelle-hermey"> 
-          LinkedIn
-        </a>
-          <h2> Three fun facts about me: </h2>
-          <ul>
-            <li> I am the oldest of four daughters</li>
-            <li> My hidden talent is finding four leaf clovers</li>
-            <li> Roasted broccoli is one of my favorite foods</li>
-          </ul>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Engineering Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+     <div>
+    <div class="cover">
+      <h1 id="main-title">Welcome to My Portfolio</h1>
+    </div>
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQHGz2R26l2VpA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727987472262?e=1750291200&v=beta&t=_nd3Yv0OkHi11kpSYj2SViR2al3eD9Av-7CWiaxBzBE" alt="My Photo" class="about-photo">
+        <div class="about-text">
+            <p>Hello! I'm Annabelle Hermey, a Computer Science and Engineering student-athlete at Dartmouth College. My primary programming languages are VHDL, Java, MATLAB, and Python. Currently, I am working on my machine learning and full-stack web-development skills. I’m also proficient in SolidWorks and working with FPGA and VGA interfaces. Whether it's hardware, software, or a mix of both, I'm always excited to build and learn.</p>
+            <p>Outside of work, I serve as a mentor for the Women in Science program and compete on Dartmouth's Women Rowing team. I love to read and do embroidery. Feel free to explore my projects and websites below!</p><p>
+    Email: <a href="mailto:annabelle.hermey@gmail.com">annabelle.hermey@gmail.com</a>
+  </p>
+        </div><div class="social-links">
+    <a href="https://www.linkedin.com/in/annabelle-hermey/" target="_blank" class="btn linkedin">LinkedIn</a>
+    <a href="https://github.com/AnnabelleHermey" target="_blank" class="btn github">GitHub</a>
+  </div>
+    </div>
+</section>
+
+
+    <section id="projects">
+    <h2>My CS Projects</h2>
+    <div class="project-grid">
+        <div class="project" data-modal="project1">
+            <p>Huffman Coding</p>
+        </div>
+        <div class="project" data-modal="project2">
+            <p>Webcam-based Painting</p>
+        </div>
+        <div class="project" data-modal="project3">
+            
+            <p>Landing Page (below)</p>
+        </div>
+        <div class="project" data-modal="project4">
+            <p>Quiz Site (below)</p>
+        </div>
+        <div class="project" data-modal="project5">
+            
+            <p>Mini Photoshop</p>
+        </div>
+        <div class="project" data-modal="project6">
+            
+            <p>License Plate Geometric Transformations</p>
+        </div>
+    </div>
+
+    <h2>My ENGS Projects</h2>
+    <div class="project-grid">
+        <div class="project" data-modal="project7">
+            
+            <p>Rinse & Ready</p>
+        </div>
+        <div class="project" data-modal="project8">
+            
+            <p>Inverted Pendulum</p>
+        </div>
+        <div class="project" data-modal="project9">
+            
+            <p>Wordle (FPGA)</p>
+        </div>
+        <div class="project" data-modal="project10">
+            <p>Morse Code Converter</p>
+        </div>
+        <div class="project" data-modal="project11">
+            
+            <p>Black Box Lab</p>
+        </div>
+        <div class="project" data-modal="project12">
+            <!-- <img src="project12-thumbnail.jpg" alt="Project 12" class="project-image"> -->
+            <p>NaviGlasses</p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="links">
+    <h2>Other Websites I've Created</h2>
+    <div class="iframe-portal">
+        <div class="iframe-box">
+            <h3>Buzzfeed-type Quiz</h3>
+            <iframe src="https://lab2-quiz-platform-annabellehermey.onrender.com/" loading="lazy"></iframe>
+        </div>
+        <div class="iframe-box">
+            <h3>Landing Page</h3>
+            <iframe src="https://lab1-landing-page-annabellehermey.onrender.com/#" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Project Modals -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-modal="project1">&times;</span>
+            <h2>Huffman Coding Details</h2>
+            <p>Using Java, created a set of prefix-free codes based on character frequency to optimize data compression.  
+
+Designed an algorithm to analyze file character frequencies, construct a priority queue for tree generation, and build a code map through a single traversal of the Huffman tree; potential applications include auto-completion for text.</p>
+        </div>
+    </div>
+
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-modal="project2">&times;</span>
+            <h2>Webcam-based Painting Details</h2>
+            <p>Engineered a program that transforms webcam input into a dynamic painting tool, allowing users to “paint” by moving an object (e.g., a hand or marker tip) in front of the camera.
+Integrated region detection and key press commands to control various painting functions, including brush selection, canvas clearing, and background changes.</p>
+            
+        </div>
+    </div>
+
+    <div id="project3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-modal="project3">&times;</span>
+            <h2>Landing Page Details</h2>
+            <p>Developed a fully responsive, mobile-friendly landing page using semantic HTML, replicating the structure and layout of a professional site using only HTML and CSS.
+
+Reverse-engineered an existing commercial landing page using Chrome DevTools to understand layout, structure, and responsive design principles.
+
+Structured key elements including navigation, call-to-action buttons, feature highlights, image sections, and footer with semantic tags and clean, accessible HTML markup.</p>
+            <a href="https://lab1-landing-page-annabellehermey.onrender.com/" >View Project</a>
+        </div>
+    </div>
+  
+
+<div id="project4" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="project4">&times;</span>
+        <h2>Quiz Site Details</h2>
+        <p>Built an interactive, ad-free quiz web application from scratch using HTML, CSS, and JavaScript to dynamically compute and display quiz results based on user input.
+
+Implemented client-side input validation, responsive hover/click animations, and conditional rendering of results with modals or inline output.
+
+Practiced Git Feature Flow with branching and pull requests to manage distinct JavaScript and styling improvements.</p>
+        <a href="https://lab2-quiz-platform-annabellehermey.onrender.com/">View Project</a>
+    </div>
+</div>
+  
+  <div id="project5" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="project5">&times;</span>
+        <h2>Mini Photoshop Details</h2>
+        <p>Implemented Poisson image blending to seamlessly composite regions from a source image into a target using gradient-domain techniques.
+
+Solved a sparse linear system to preserve source gradients while ensuring smooth transitions at boundaries, avoiding visible seams.</p>
+        
+    </div>
+</div>
+  
+  
+  <div id="project6" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="project6">&times;</span>
+        <h2>License Plate Transformation Details</h2>
+        <p>Applied affine and perspective transformations to estimate and reverse geometric distortions in images using Python and NumPy.
+
+Computed a homography matrix from point correspondences to undistort angled license plate images, simulating real-world forensic enhancement.
+
+Developed custom routines to construct and solve linear systems for both affine and perspective warping corrections.</p>
+        
+    </div>
+</div>
+  
+  
+  <div id="project7" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="project7">&times;</span>
+        <h2>Rinse & Ready Details</h2>
+        <p> 
+
+Co-invented an eco-friendly, quick, and efficient dishwashing solution for dorms and campus buildings, tailored for washing food containers.
+
+Led the design process from initial sketches to 3D modeling in SolidWorks, incorporating features like strainers, water jets, and an in-line soap dispenser.
+
+Achieved 57% faster washing time compared to handwashing with 63% less water usage and 146% less bacteria colonies and earned high praises for innovation and functionality. </p>
+        
+    </div>
+</div>
+  
+  
+  <div id="project8" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="project8">&times;</span>
+        <h2>Inverted Pendulum Details</h2>
+        <p>Designed and implemented a proportional-integral-derivative integral (PID) controller to stabilize an inverted pendulum mounted on a moving car, ensuring the pendulum recovered from disturbances and maintained balance by controlling the motor to drive and reverse the car. 
+
+Modeled the system dynamics by deriving equations for the physical and motor systems, analyzing control loops using MATLAB, and designing a compensator circuit with root locus to achieve stability and robustness. 
+
+Conducted rigorous testing, addressing challenges like jitter, drift, and hardware limitations to achieve a functional and responsive stabilization system. </p>
+        
+    </div>
+</div>
+  
+  
+  <div id="project9" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="project9">&times;</span>
+        <h2>Wordle (FPGA) Details</h2>
+        <p>Collaborated on a Wordle game variant using an FPGA, allowing users to input five-letter words for comparison against a target word with feedback on correct, misplaced, and incorrect letters.
+Developed VHDL code to establish an SCI interface between PuTTY and the FPGA.
+Implemented code for character input through letter matching in VHDL.</p>
+        
+    </div>
+</div>
+  
+  
+  <div id="project10" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="project10">&times;</span>
+        <h2>Morse Code Converter Details</h2>
+        <p>Developed a user interface that converts typed input into Morse code audio, complete with correct syntax. 
+
+Using VHDL, implemented a system to translate ASCII characters from SCI into Morse code signals, output through a speaker connected to an FPGA; potential applications include embedded hardware and cybersecurity.  </p>
+       
+    </div>
+</div>
+  
+  
+  <div id="project11" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="project11">&times;</span>
+        <h2>Black Box Lab Details</h2>
+        <p>DAnalyzed and identified the components of a parallel RL circuit using waveform data and Bode plots from two unknown circuits, one LTI and one non-LTI.
+Employed MATLAB to model and verify predictions, and presented results to lab instructors.</p>
+        
+    </div>
+</div>
+  
+  
+  <div id="project12" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="project12">&times;</span>
+        <h2>NaviGlasses Details</h2>
+        <p>Designed and prototyped a wearable/environment-based navigation aid for new college students, using non-visual cues (vibrations, audio, light) to guide users around campus.
+
+Conducted user research and usability testing to understand how students interpret subtle directional feedback and improve trust in navigation systems without relying on GPS.
+
+Mapped out end-to-end user flows, identified key pain points in current campus navigation methods, and integrated features like live social insights, accessibility mapping, and indoor routing.</p>
+       
+    </div>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
 </html>
