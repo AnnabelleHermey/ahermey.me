@@ -470,15 +470,17 @@ header nav a.active {
 }
 /* ===============================
    Elegant Centered Timeline Layout
-*/
+*//* ===============================
+   PROJECT TIMELINE — Responsive Center Line Layout
+   =============================== */
 .timeline {
   position: relative;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
-/* Central vertical line */
+/* Center line */
 .timeline::before {
   content: "";
   position: absolute;
@@ -488,112 +490,86 @@ header nav a.active {
   width: 3px;
   height: 100%;
   background: var(--accent);
-  opacity: 0.25;
-  border-radius: 2px;
-  z-index: 0;
+  opacity: 0.3;
 }
 
-/* Individual timeline items */
+/* Timeline items */
 .timeline-item {
   position: relative;
   width: 50%;
-  padding: 20px 50px;
+  padding: 25px 40px;
   box-sizing: border-box;
-  z-index: 2;
 }
 
-/* Alternate positioning */
+/* Alternate sides */
 .timeline-item:nth-child(odd) {
   left: 0;
   text-align: right;
 }
-
 .timeline-item:nth-child(even) {
   left: 50%;
   text-align: left;
 }
 
-/* ✅ Vertical overlap (stacking effect) */
-.timeline-item:not(:first-child) {
-  margin-top: -60px;
+/* Content box */
+.timeline-content {
+  background: rgba(44, 26, 18, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 25px 30px;
+  color: var(--text-light);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  display: inline-block;
+  max-width: 450px;
+  transition: transform 0.3s ease;
 }
 
-/* Connector dots */
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+/* Circle nodes */
 .timeline-item::before {
   content: "";
   position: absolute;
-  top: 40px;
-  right: -14px;
-  width: 20px;
-  height: 20px;
+  top: 30px;
+  width: 16px;
+  height: 16px;
   background: var(--accent);
-  border: 3px solid var(--border);
+  border: 2px solid var(--border);
   border-radius: 50%;
-  box-shadow: 0 0 12px rgba(166, 196, 138, 0.35);
-  z-index: 3;
-}
-
-.timeline-item:nth-child(even)::before {
-  left: -14px;
-  right: auto;
-}
-
-/* Timeline content cards */
-.timeline-content {
-  background: rgba(44, 26, 18, 0.85);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  color: var(--text-light);
-  padding: 30px 40px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(8px);
-  display: inline-block;
-  width: 90%;
-  position: relative;
   z-index: 2;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ✅ Add more space from the middle */
-.timeline-item:nth-child(odd) .timeline-content {
-  margin-right: 60px; /* increased from -25px */
+.timeline-item:nth-child(odd)::before {
+  right: -9px;
+}
+.timeline-item:nth-child(even)::before {
+  left: -9px;
 }
 
-.timeline-item:nth-child(even) .timeline-content {
-  margin-left: 60px; /* increased from -25px */
-}
-
-/* Hover effect */
-.timeline-item:hover .timeline-content {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 24px rgba(166, 196, 138, 0.3);
-}
-
-/* Responsive layout */
-@media (max-width: 800px) {
+/* ========== MOBILE / TABLET FIX ========== */
+@media (max-width: 900px) {
   .timeline::before {
-    left: 20px;
+    left: 20px; /* move line to the left */
+    transform: none;
   }
 
   .timeline-item {
     width: 100%;
-    left: 0;
-    text-align: left;
-    margin-top: 40px;
     padding-left: 50px;
+    text-align: left;
+    left: 0 !important;
   }
 
   .timeline-item::before {
-    left: 20px;
-    right: auto;
+    left: 15px;
   }
 
   .timeline-content {
-    margin: 0;
-    width: 100%;
+    max-width: 100%;
   }
 }
-
 
 /* ===== Other Projects (Iframes) ===== */
 .iframes-section {
