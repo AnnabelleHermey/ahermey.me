@@ -1,352 +1,279 @@
 
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Annabelle Hermey Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Engineering Projects</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills & Tools</a>
-      <a href="#experience">Professional Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#iframes">Websites</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Annabelle Hermey</h1>
-      <h2>Computer Science &amp; Engineering Student</h2>
-      <p>Combining hardware insight and software creativity to build meaningful projects — from embedded systems to web development.</p>
-      <a href="#contact" class="btn">Let's Get In Touch</a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <canvas id="about-bg"></canvas>
-    <div class="about-container">
-      <img src="https://media.licdn.com/dms/image/v2/D4E03AQGXqeOMH49vGA/profile-displayphoto-scale_400_400/B4EZeuLpqHHcAo-/0/1750973980841?e=1762992000&v=beta&t=bNggMN_xu66kb3LSCisPNCbIeL0kuhNGGtOg4U4mAQ0" alt="Annabelle Hermey" class="about-photo">
-      <div class="about-text">
-        <p>Hello! I'm Annabelle Hermey, a Computer Science and Engineering student-athlete at Dartmouth College. My primary programming languages are VHDL, Java, MATLAB, and Python. I'm developing my skills in machine learning and full-stack web development. I’m also proficient in SolidWorks and working with FPGA and VGA interfaces.</p>
-        <p>Outside of class, I mentor for the Women in Science program and compete on Dartmouth's Women’s Rowing team. I love reading and embroidery — and I’m always excited to learn and build.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills-section">
-    <div class="skills-content">
-      <div class="skills-text">
-        <h2>Skills & Tools</h2>
-        <p>Here are the technologies, languages, and tools I’ve worked with — from embedded systems to full-stack web development.</p>
-      </div>
-      <div class="word-cloud">
-        <span style="font-size:2rem;">Python</span>
-        <span style="font-size:1.8rem;">Java</span>
-        <span style="font-size:2.2rem;">VHDL</span>
-        <span style="font-size:1.7rem;">MATLAB</span>
-        <span style="font-size:2rem;">SolidWorks</span>
-        <span style="font-size:1.6rem;">FPGA</span>
-        <span style="font-size:1.5rem;">HTML</span>
-        <span style="font-size:1.5rem;">CSS</span>
-        <span style="font-size:1.7rem;">JavaScript</span>
-        <span style="font-size:1.3rem;">React</span>
-        <span style="font-size:1.4rem;">Git</span>
-        <span style="font-size:1.4rem;">Machine Learning</span>
-        <span style="font-size:1.3rem;">Embedded Systems</span>
-      </div>
-    </div>
-  </section>
-
- <!-- Professional Experience -->
-<section id="experience" class="experience">
-  <h2>Professional Experience</h2>
-  
-  <div class="experience-grid">
-    <!-- NASA -->
-    <div class="experience-card">
-      <h3>Software Engineering Intern <span>— NASA Marshall Space Flight Center</span></h3>
-      <p class="date">June 2025 – August 2025</p>
-      <ul>
-        <li>Developed workflow automation tools improving Falcon 9 hardware certification efficiency across NASA and SpaceX systems.</li>
-        <li>Automated large-scale Jira and Confluence updates using Python scripts and REST APIs.</li>
-        <li>Recognized as an Honorary Crew-11 Flag Raising Honoree for exceptional performance.</li>
-      </ul>
-    </div>
-
-    <!-- Teaching Assistant -->
-    <div class="experience-card">
-      <h3>Digital Engineering Lead & Teaching Assistant <span>— Thayer School of Engineering, Dartmouth</span></h3>
-      <p class="date">March 2024 – June 2025</p>
-      <ul>
-        <li>Led a team of TAs to coordinate labs, grading, and office hours for 30+ students in embedded systems courses.</li>
-        <li>Supported students in VHDL, FPGA design, and circuit analysis — improving comprehension and project outcomes.</li>
-      </ul>
-    </div>
-
-    <!-- Research -->
-    <div class="experience-card">
-      <h3>Research Assistant <span>— Dartmouth College</span></h3>
-      <p class="date">August 2024 – December 2024</p>
-      <ul>
-        <li>Developed MATLAB-based eigenface recognition models to evaluate algorithmic bias in facial recognition systems.</li>
-        <li>Secured $1,600 research grant through Dartmouth’s Office of Undergraduate Research and Advising (OURA).</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-  
- <section id="projects" class="projects">
-  <h2>Projects</h2>
-  <div class="timeline">
-    <!-- Project Item -->
-    <div class="timeline-item" data-modal="project1">
-      <div class="timeline-content">
-        <h3>Huffman Coding</h3>
-        <p>Java | Data Compression</p>
-        <p class="desc">Implemented Huffman encoding to create efficient prefix-free data compression algorithms.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item" data-modal="project2">
-      <div class="timeline-content">
-        <h3>Webcam-based Painting</h3>
-        <p>Python | OpenCV</p>
-        <p class="desc">Built a vision-based drawing tool that detects motion and paints dynamically on-screen.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item" data-modal="project8">
-      <div class="timeline-content">
-        <h3>Inverted Pendulum</h3>
-        <p>MATLAB | Control Systems</p>
-        <p class="desc">Designed a PID controller to stabilize a pendulum on a motorized cart.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item" data-modal="project12">
-      <div class="timeline-content">
-        <h3>NaviGlasses</h3>
-        <p>Hardware | Human-Centered Design</p>
-        <p class="desc">Developed a wearable navigation prototype using non-visual feedback for accessibility.</p>
-      </div>
-    </div>
-  </div>
+    <div>
+   <div class="cover">
+     <h1 id="main-title">Welcome to My Portfolio</h1>
+   </div>
+  <section id="about">
+   <h2>About Me</h2>
+   <div class="about-container">
+       <img src="https://media.licdn.com/dms/image/v2/D4E03AQGXqeOMH49vGA/profile-displayphoto-scale_400_400/B4EZeuLpqHHcAo-/0/1750973980841?e=1762992000&v=beta&t=bNggMN_xu66kb3LSCisPNCbIeL0kuhNGGtOg4U4mAQ0" alt="My Photo" class="about-photo">
+       <div class="about-text">
+           <p>Hello! I'm Annabelle Hermey, a Computer Science and Engineering student-athlete at Dartmouth College. My primary programming languages are VHDL, Java, MATLAB, and Python. Currently, I am working on my machine learning and full-stack web-development skills. I’m also proficient in SolidWorks and working with FPGA and VGA interfaces. Whether it's hardware, software, or a mix of both, I'm always excited to build and learn.</p>
+           <p>Outside of work, I serve as a mentor for the Women in Science program and compete on Dartmouth's Women Rowing team. I love to read and do embroidery. Feel free to explore my projects and websites below!</p><p>
+   Email: <a href="mailto:annabelle.hermey@gmail.com">annabelle.hermey@gmail.com</a>
+ </p>
+       </div><div class="social-links">
+   <a href="https://www.linkedin.com/in/annabelle-hermey/" target="_blank" class="btn linkedin">LinkedIn</a>
+   <a href="https://github.com/AnnabelleHermey" target="_blank" class="btn github">GitHub</a>
+ </div>
+   </div>
 </section>
 
 
-  <!-- Other Websites -->
-  
-  <section id="iframes" class="iframes-section">
-    <h2>Other Projects & Websites</h2>
-    
-    <div class="iframe-grid">
-      <div class="iframe-box">
-  <h3>LessonLink</h3>
-  <iframe
-    src="https://project-lessonlink.onrender.com/"
-    loading="lazy"
-  ></iframe>
-</div>
 
-      <div class="iframe-box">
-        <h3>Buzzfeed-type Quiz</h3>
-        <iframe src="https://lab2-quiz-platform-annabellehermey.onrender.com/" loading="lazy"></iframe>
-      </div>
-      <div class="iframe-box">
-        <h3>Landing Page</h3>
-        <iframe src="https://lab1-landing-page-annabellehermey.onrender.com/" loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact -->
-<section id="contact" class="contact">
-  <h2>Let's Connect</h2>
-  <p class="email">
-    <a href="mailto:annabelle.hermey@gmail.com">annabelle.hermey@gmail.com</a>
-  </p>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/annabelle-hermey/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/AnnabelleHermey" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
+   <section id="projects">
+   <h2>My CS Projects</h2>
+   <div class="project-grid">
+       <div class="project" data-modal="project1">
+           <p>Huffman Coding</p>
+       </div>
+       <div class="project" data-modal="project2">
+           <p>Webcam-based Painting</p>
+       </div>
+       <div class="project" data-modal="project3">
+          
+           <p>Landing Page (below)</p>
+       </div>
+       <div class="project" data-modal="project4">
+           <p>Quiz Site (below)</p>
+       </div>
+       <div class="project" data-modal="project5">
+          
+           <p>Mini Photoshop</p>
+       </div>
+       <div class="project" data-modal="project6">
+          
+           <p>License Plate Geometric Transformations</p>
+       </div>
+   </div>
+
+
+   <h2>My ENGS Projects</h2>
+   <div class="project-grid">
+       <div class="project" data-modal="project7">
+          
+           <p>Rinse & Ready</p>
+       </div>
+       <div class="project" data-modal="project8">
+          
+           <p>Inverted Pendulum</p>
+       </div>
+       <div class="project" data-modal="project9">
+          
+           <p>Wordle (FPGA)</p>
+       </div>
+       <div class="project" data-modal="project10">
+           <p>Morse Code Converter</p>
+       </div>
+       <div class="project" data-modal="project11">
+          
+           <p>Black Box Lab</p>
+       </div>
+       <div class="project" data-modal="project12">
+           <!-- <img src="project12-thumbnail.jpg" alt="Project 12" class="project-image"> -->
+           <p>NaviGlasses</p>
+       </div>
+   </div>
 </section>
 
 
-  <!-- ===== Project Modals ===== -->
-  <!-- paste all 12 of your detailed modals from your original file here (project1 – project12) -->
-  <!-- Project Modals -->
-    <div id="project1" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" data-modal="project1">&times;</span>
-            <h2>Huffman Coding Details</h2>
-            <p>Using Java, created a set of prefix-free codes based on character frequency to optimize data compression.  
+
+
+   <section id="links">
+   <h2>Other Websites I've Created</h2>
+   <div class="iframe-portal">
+       <div class="iframe-box">
+           <h3>Buzzfeed-type Quiz</h3>
+           <iframe src="https://lab2-quiz-platform-annabellehermey.onrender.com/" loading="lazy"></iframe>
+       </div>
+       <div class="iframe-box">
+           <h3>Landing Page</h3>
+           <iframe src="https://lab1-landing-page-annabellehermey.onrender.com/#" loading="lazy"></iframe>
+       </div>
+   </div>
+</section>
+
+
+
+
+   <!-- Project Modals -->
+   <div id="project1" class="modal">
+       <div class="modal-content">
+           <span class="close-btn" data-modal="project1">&times;</span>
+           <h2>Huffman Coding Details</h2>
+           <p>Using Java, created a set of prefix-free codes based on character frequency to optimize data compression. 
+
 
 Designed an algorithm to analyze file character frequencies, construct a priority queue for tree generation, and build a code map through a single traversal of the Huffman tree; potential applications include auto-completion for text.</p>
-        </div>
-    </div>
+       </div>
+   </div>
 
-    <div id="project2" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" data-modal="project2">&times;</span>
-            <h2>Webcam-based Painting Details</h2>
-            <p>Engineered a program that transforms webcam input into a dynamic painting tool, allowing users to “paint” by moving an object (e.g., a hand or marker tip) in front of the camera.
+
+   <div id="project2" class="modal">
+       <div class="modal-content">
+           <span class="close-btn" data-modal="project2">&times;</span>
+           <h2>Webcam-based Painting Details</h2>
+           <p>Engineered a program that transforms webcam input into a dynamic painting tool, allowing users to “paint” by moving an object (e.g., a hand or marker tip) in front of the camera.
 Integrated region detection and key press commands to control various painting functions, including brush selection, canvas clearing, and background changes.</p>
-            
-        </div>
-    </div>
+          
+       </div>
+   </div>
 
-    <div id="project3" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" data-modal="project3">&times;</span>
-            <h2>Landing Page Details</h2>
-            <p>Developed a fully responsive, mobile-friendly landing page using semantic HTML, replicating the structure and layout of a professional site using only HTML and CSS.
+
+   <div id="project3" class="modal">
+       <div class="modal-content">
+           <span class="close-btn" data-modal="project3">&times;</span>
+           <h2>Landing Page Details</h2>
+           <p>Developed a fully responsive, mobile-friendly landing page using semantic HTML, replicating the structure and layout of a professional site using only HTML and CSS.
+
 
 Reverse-engineered an existing commercial landing page using Chrome DevTools to understand layout, structure, and responsive design principles.
 
+
 Structured key elements including navigation, call-to-action buttons, feature highlights, image sections, and footer with semantic tags and clean, accessible HTML markup.</p>
-            <a href="https://lab1-landing-page-annabellehermey.onrender.com/" >View Project</a>
-        </div>
-    </div>
-  
+           <a href="https://lab1-landing-page-annabellehermey.onrender.com/" >View Project</a>
+       </div>
+   </div>
+
 
 <div id="project4" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-modal="project4">&times;</span>
-        <h2>Quiz Site Details</h2>
-        <p>Built an interactive, ad-free quiz web application from scratch using HTML, CSS, and JavaScript to dynamically compute and display quiz results based on user input.
+   <div class="modal-content">
+       <span class="close-btn" data-modal="project4">&times;</span>
+       <h2>Quiz Site Details</h2>
+       <p>Built an interactive, ad-free quiz web application from scratch using HTML, CSS, and JavaScript to dynamically compute and display quiz results based on user input.
+
 
 Implemented client-side input validation, responsive hover/click animations, and conditional rendering of results with modals or inline output.
 
+
 Practiced Git Feature Flow with branching and pull requests to manage distinct JavaScript and styling improvements.</p>
-        <a href="https://lab2-quiz-platform-annabellehermey.onrender.com/">View Project</a>
-    </div>
+       <a href="https://lab2-quiz-platform-annabellehermey.onrender.com/">View Project</a>
+   </div>
 </div>
-  
   <div id="project5" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-modal="project5">&times;</span>
-        <h2>Mini Photoshop Details</h2>
-        <p>Implemented Poisson image blending to seamlessly composite regions from a source image into a target using gradient-domain techniques.
+   <div class="modal-content">
+       <span class="close-btn" data-modal="project5">&times;</span>
+       <h2>Mini Photoshop Details</h2>
+       <p>Implemented Poisson image blending to seamlessly composite regions from a source image into a target using gradient-domain techniques.
+
 
 Solved a sparse linear system to preserve source gradients while ensuring smooth transitions at boundaries, avoiding visible seams.</p>
-        
-    </div>
+      
+   </div>
 </div>
-  
-  
-  <div id="project6" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-modal="project6">&times;</span>
-        <h2>License Plate Transformation Details</h2>
-        <p>Applied affine and perspective transformations to estimate and reverse geometric distortions in images using Python and NumPy.
+ 
+ <div id="project6" class="modal">
+   <div class="modal-content">
+       <span class="close-btn" data-modal="project6">&times;</span>
+       <h2>License Plate Transformation Details</h2>
+       <p>Applied affine and perspective transformations to estimate and reverse geometric distortions in images using Python and NumPy.
+
 
 Computed a homography matrix from point correspondences to undistort angled license plate images, simulating real-world forensic enhancement.
 
+
 Developed custom routines to construct and solve linear systems for both affine and perspective warping corrections.</p>
-        
-    </div>
+      
+   </div>
 </div>
-  
-  
-  <div id="project7" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-modal="project7">&times;</span>
-        <h2>Rinse & Ready Details</h2>
-        <p> 
+ 
+ <div id="project7" class="modal">
+   <div class="modal-content">
+       <span class="close-btn" data-modal="project7">&times;</span>
+       <h2>Rinse & Ready Details</h2>
+       <p>
+
 
 Co-invented an eco-friendly, quick, and efficient dishwashing solution for dorms and campus buildings, tailored for washing food containers.
 
+
 Led the design process from initial sketches to 3D modeling in SolidWorks, incorporating features like strainers, water jets, and an in-line soap dispenser.
 
-Achieved 57% faster washing time compared to handwashing with 63% less water usage and 146% less bacteria colonies and earned high praises for innovation and functionality. </p>
-        
-    </div>
-</div>
-  
-  
-  <div id="project8" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-modal="project8">&times;</span>
-        <h2>Inverted Pendulum Details</h2>
-        <p>Designed and implemented a proportional-integral-derivative integral (PID) controller to stabilize an inverted pendulum mounted on a moving car, ensuring the pendulum recovered from disturbances and maintained balance by controlling the motor to drive and reverse the car. 
 
-Modeled the system dynamics by deriving equations for the physical and motor systems, analyzing control loops using MATLAB, and designing a compensator circuit with root locus to achieve stability and robustness. 
+Achieved 57% faster washing time compared to handwashing with 63% less water usage and 146% less bacteria colonies and earned high praises for innovation and functionality. </p>
+      
+   </div>
+</div>
+ 
+ <div id="project8" class="modal">
+   <div class="modal-content">
+       <span class="close-btn" data-modal="project8">&times;</span>
+       <h2>Inverted Pendulum Details</h2>
+       <p>Designed and implemented a proportional-integral-derivative integral (PID) controller to stabilize an inverted pendulum mounted on a moving car, ensuring the pendulum recovered from disturbances and maintained balance by controlling the motor to drive and reverse the car.
+
+
+Modeled the system dynamics by deriving equations for the physical and motor systems, analyzing control loops using MATLAB, and designing a compensator circuit with root locus to achieve stability and robustness.
+
 
 Conducted rigorous testing, addressing challenges like jitter, drift, and hardware limitations to achieve a functional and responsive stabilization system. </p>
-        
-    </div>
+      
+   </div>
 </div>
-  
-  
-  <div id="project9" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-modal="project9">&times;</span>
-        <h2>Wordle (FPGA) Details</h2>
-        <p>Collaborated on a Wordle game variant using an FPGA, allowing users to input five-letter words for comparison against a target word with feedback on correct, misplaced, and incorrect letters.
+ 
+ <div id="project9" class="modal">
+   <div class="modal-content">
+       <span class="close-btn" data-modal="project9">&times;</span>
+       <h2>Wordle (FPGA) Details</h2>
+       <p>Collaborated on a Wordle game variant using an FPGA, allowing users to input five-letter words for comparison against a target word with feedback on correct, misplaced, and incorrect letters.
 Developed VHDL code to establish an SCI interface between PuTTY and the FPGA.
 Implemented code for character input through letter matching in VHDL.</p>
-        
-    </div>
+      
+   </div>
 </div>
-  
-  
-  <div id="project10" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-modal="project10">&times;</span>
-        <h2>Morse Code Converter Details</h2>
-        <p>Developed a user interface that converts typed input into Morse code audio, complete with correct syntax. 
+ 
+ <div id="project10" class="modal">
+   <div class="modal-content">
+       <span class="close-btn" data-modal="project10">&times;</span>
+       <h2>Morse Code Converter Details</h2>
+       <p>Developed a user interface that converts typed input into Morse code audio, complete with correct syntax.
+
 
 Using VHDL, implemented a system to translate ASCII characters from SCI into Morse code signals, output through a speaker connected to an FPGA; potential applications include embedded hardware and cybersecurity.  </p>
-       
-    </div>
+     
+   </div>
 </div>
-  
-  
-  <div id="project11" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-modal="project11">&times;</span>
-        <h2>Black Box Lab Details</h2>
-        <p>DAnalyzed and identified the components of a parallel RL circuit using waveform data and Bode plots from two unknown circuits, one LTI and one non-LTI.
+ 
+ <div id="project11" class="modal">
+   <div class="modal-content">
+       <span class="close-btn" data-modal="project11">&times;</span>
+       <h2>Black Box Lab Details</h2>
+       <p>DAnalyzed and identified the components of a parallel RL circuit using waveform data and Bode plots from two unknown circuits, one LTI and one non-LTI.
 Employed MATLAB to model and verify predictions, and presented results to lab instructors.</p>
-        
-    </div>
+      
+   </div>
 </div>
-  
-  
-  <div id="project12" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-modal="project12">&times;</span>
-        <h2>NaviGlasses Details</h2>
-        <p>Designed and prototyped a wearable/environment-based navigation aid for new college students, using non-visual cues (vibrations, audio, light) to guide users around campus.
+ 
+ <div id="project12" class="modal">
+   <div class="modal-content">
+       <span class="close-btn" data-modal="project12">&times;</span>
+       <h2>NaviGlasses Details</h2>
+       <p>Designed and prototyped a wearable/environment-based navigation aid for new college students, using non-visual cues (vibrations, audio, light) to guide users around campus.
+
 
 Conducted user research and usability testing to understand how students interpret subtle directional feedback and improve trust in navigation systems without relying on GPS.
 
+
 Mapped out end-to-end user flows, identified key pain points in current campus navigation methods, and integrated features like live social insights, accessibility mapping, and indoor routing.</p>
-       
-    </div>
+     
+   </div>
 </div>
 
-  <script src="main.js"></script>
+
+
+
+   <script src="main.js"></script>
 </body>
 </html>
+
+
